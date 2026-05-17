@@ -7,7 +7,13 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('pages.about');
+    return view('pages.about',[
+
+        'nama'=>'Paulus Sesa',
+        'umur'=>25,
+        'alamat'=>'Maybrat',
+    ]);
 });
 
 Route::view('/contact', 'pages.contact');
+Route::view('/product','pages.product');
