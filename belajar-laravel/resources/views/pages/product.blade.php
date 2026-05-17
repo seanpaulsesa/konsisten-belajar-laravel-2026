@@ -1,12 +1,19 @@
 @extends('layouts.master')
 
 @section('konten')
-<h1>Daftar Poduk Kami</h1>
+<h1>Daftar Produk Kami</h1>
 <hr>
-<button type="button" class="btn btn-primary mb-3">Tekan Tahan</button>
+<a href="/product/tambah" class="btn btn-primary mb-3" type="button" class="btn btn-primary mb-3">Tekan Tahan</a>
+<div class="alert alert-primary">
+    <b>Nama Toko:</b> {{$nama_toko}}
+    <br>
+    <b>Alamat:</b> {{$alamat}}
+    <br>
+    <b>Type Toko:</b>{{$type}}
+</div>
 <div class="card">
-    <div class="card-header bg-secondary">
-        Daftar Poduk
+    <div class="card-header bg-info">
+        Daftar Produk
     </div>
   <div class="card-body">
     <table class="table table-striped table-bordered">
@@ -23,7 +30,7 @@
     <tr>
       <th scope="row">1</th>
       <td>Laptop ROG</td>
-      <td>25</td>
+      <td>5</td>
       <td>80.000.000</td>
       <td>
           <button type="button" class="btn btn-success">Tambah</button>
@@ -34,8 +41,8 @@
     <tr>
       <th scope="row">2</th>
       <td>Laptop ASUS</td>
-      <td>20</td>
-      <td>7.000.000</td>
+      <td>3</td>
+      <td>28.000.000</td>
       <td>
           <button type="button" class="btn btn-success">Tambah</button>
           <button type="button" class="btn btn-warning">Edit</button>
@@ -45,8 +52,8 @@
     <tr>
       <th scope="row">3</th>
       <td>Laptop ACER</td>
-      <td>10</td>
-      <td>20.000.000</td>
+      <td>8</td>
+      <td>24.000.000</td>
       <td>
           <button type="button" class="btn btn-success">Tambah</button>
           <button type="button" class="btn btn-warning">Edit</button>
@@ -56,8 +63,8 @@
     <tr>
       <th scope="row">4</th>
       <td>Laptop THOSIBA</td>
-      <td>5</td>
-      <td>16.000.000</td>
+      <td>2</td></td>
+      <td>8.000.000</td>
       <td>
           <button type="button" class="btn btn-success">Tambah</button>
           <button type="button" class="btn btn-warning">Edit</button>
